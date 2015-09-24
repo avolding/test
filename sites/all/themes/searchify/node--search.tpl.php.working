@@ -1,0 +1,26 @@
+    
+
+<h2><?php print $node->field_tile_image_url['und']['0']['value'];?></h2>
+
+
+
+<a href="#" data-featherlight="#<?php print $nid ?>"><img src="<?php print $node->field_tile_image_url['und']['0']['value'];?>" alt="<?php print $title ?>" ></a>
+<div class="lightbox" id="<?php print $nid ?>">
+			<form target="_blank" action="http://localhost/searchier/sites/all/themes/at_subtheme/redirect.php" method="post" name="myform">
+			<input type="hidden" name="prepend" value="<?php print $node->field_url_search_prefix['und']['0']['value'];?>">
+			Name: <input type="text" autofocus="autofocus" name="name" id="changeme"><br>
+			<input type="submit">
+			</form>
+			<img src="<?php print $node->field_lightbox_image_url['und']['0']['value'];?>" alt="<?php print $title ?>" >
+<!-------------------------
+			<script>
+function setFocusToTextBox(){
+    document.getElementById("changeme").focus();
+}
+</script>
+-------------------------------------->
+			</div>
+		
+		
+		
+<?php print_r($node) ?>

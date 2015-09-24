@@ -1,0 +1,892 @@
+/*!
+ * Bootstrap v3.2.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+    }
+
+
+h1 {
+font-family: 'Roboto Condensed', sans-serif;
+color: #2760ff;
+
+}
+
+
+.form-submit {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #ffffff;
+  
+  background: #2761ff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+
+input {
+border: 1px #ccc solid;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+div, span, p{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.lightbox-img {
+
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+.searchier-row{
+    border: 1px solid blue;
+	float:left;
+	padding: 10px;
+
+}
+
+
+.container-inline{
+display: none;
+}
+
+.block-inner {
+display: none;
+border: 1px solid green;
+}
+
+
+
+
+
+#user-login {
+border: none;
+}
+
+#user-pass {
+border: none;
+}
+
+
+
+
+
+
+
+
+
+
+.form-required {
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a, a:active, a:focus { outline: none; }
+
+
+.textbox {
+
+
+width: 100%;
+font-size: 50px;
+display: block;
+margin-left: auto
+}
+
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+       -o-transition: opacity .15s linear;
+          transition: opacity .15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.modal-open {
+  overflow: hidden;
+  padding-right: 0px !important;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal.fade .
+ {
+  -webkit-transition: -webkit-transform .3s ease-out;
+       -o-transition:      -o-transform .3s ease-out;
+          transition:         transform .3s ease-out;
+}
+.modal.in .modal-dialog {
+
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=75);
+  opacity: .75;
+}
+.modal-header {
+  min-height: 16.42857143px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+margin-top: 5em;
+display: block;
+margin-left: 50%;
+  text-align:center;
+
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+
+
+
+
+/* LOGIN PAGE SETTINGS GO HERE-----------------*/
+
+#auth_box {
+  
+  
+  font-family: sans-serif;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  #auth_box h1#the_logo {
+    text-align: center;
+    margin: 0;
+    padding: 0 0 25px;
+  }
+    
+    #auth_box h1#the_logo img {
+      max-width: 250px;
+    }
+  
+  #auth_box h2.title {
+    margin: 0;
+    padding: 0 0 15px;
+    font-size: 2em;
+  }
+  
+  #auth_box input[type="text"],
+  #auth_box input[type="password"] {
+    width: 260px;
+    border: 1px #ccc solid;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  #auth_box input[type="submit"] {
+    float: right;
+  }
+
+  #auth_box #middle_part {
+    border-radius: 3px;
+    background: #fff;
+    
+    overflow: hidden;
+    
+    height: 425px;
+    width: 475px;
+    background-image: url("/sites/all/themes/searchify/images/login.png");
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    
+    padding-top: 50px;
+    margin-left: 75px;
+   
+   
+   
+
+
+  }
+  
+  
+  
+  
+ #form-stuffs {
+ height: auto;
+margin: 0 auto;
+min-height: 25px;
+position: relative;
+width: 200px;
+vertical-align: middle; 
+top: 125px;
+right: 25px;
+ 
+ }
+
+  #auth_box .back_link {
+    padding: 15px 0 0;
+  }
+
+  #auth_box #bottom_part {
+    font-size: 13px;
+    padding: 15px 0 0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* STUFF FOR TOP NAVIGATION THAT'S GETTING DELETED.... SOON
+  
+  #top-navigation {
+  background-color: #444D59;
+  
+  
+  height: 32px;
+  
+  }
+  
+  
+  #spacer {
+  height: 10px;
+  }
+  
+  #left-navigation {
+  padding-left: 40px;
+  width: 150px;
+
+display: inline;
+min-width: 700px;
+}
+ 
+  #left-navigation a { color: #FFFFFF; font-size:25px; font-family: 'Anton', sans-serif; }
+  
+  
+  #nav-links {
+display: inline;
+margin-left: 150px;
+font-size:15px;
+
+}
+
+  
+  #nav-links a {
+  color: #FFFFFF;
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  
+  
+STUFF ABOVE HERE WAS COMMENTED OUT B/C IT'S BEING DELETED WHEN NEW NAV GETS DONE */
+
+
+
+
+/*
+#header-container {
+height: 30px;
+width: 100%;
+background-color: #444D59;
+min-width: 750px;
+display: block;
+float: right;
+
+}
+
+#home-link{
+height:25px;
+
+width: 100px;
+display: inline-block;
+margin-left: 25px;
+
+
+
+
+}
+#home-link a {
+color: #FFFFFF; 
+font-size:25px; 
+font-family: 'Anton', sans-serif;
+display: inline;
+float: left;
+
+
+
+position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+
+
+
+}
+/*---------------------------------------------------------------
+#main-nav {
+
+float: right;
+color: #FFFFFF; 
+font-size:25px; 
+font-family: 'Anton', sans-serif;
+display: inline-block;
+width: 200px;
+
+position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+-----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*
+#main-nav{
+float: right;
+}
+#main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#main-nav li {
+    float: left;
+    
+}
+
+#main-nav a:link, a:visited {
+    display: block;
+    width: 75px;
+    height: 30px;
+    color: #444D59;
+    background-color: #FFFFFF;
+    font-size:20px; 
+
+    
+    
+    
+    text-align: center;
+    
+    text-decoration: none;
+    ;
+    font-family: anton;
+}
+
+#main-nav a:hover, a:active {
+    background-color: #444D59;
+    color: #FFFFFF;
+}
+
+
+
+
+#litebox-menu a {
+color: #FFFFFF; 
+font-size:25px; 
+font-family: 'Anton', sans-serif;
+display: inline;
+float: left;
+
+}
+
+
+*/
+
+
+
+
+
+
+
+.ahead {
+  background-color: #444D59;
+  height: 30px;
+  min-width: 600px;
+  line-height: 30px;
+}
+
+.aright {
+  float: right;
+  background-color: #FFFFFF;
+  
+  
+}
+
+.aright a {
+font-size: 1.5em;
+color: #444D59;
+
+}
+
+.aright a:hover {
+background-color: #444D59;
+color: #fff;
+}
+
+
+.amain {
+  float: left;
+  padding-left: 35px;
+    font-size: 35px;
+  line-height: 30px;
+  color: #fff
+  min-width: 250px;
+  
+  
+  
+}
+
+
+
+.amain a{
+/*background-color: blue; */
+color: #fff;
+line-height: 28px;
+
+
+}
+
+
+.anav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  .contact {
+    float: right;
+    
+  }
+}
+
+.anav li {
+  
+
+  height: 40px;
+  
+  font-family: 'Anton', sans-serif;
+  line-height: 28px; 
+  min-width: 100px; 
+}
+
+.anav a {
+  text-decoration: none;
+  /*color: #fff;*/
+  
+  display: block;
+  transition: .3s background-color;
+}
+
+.anav a:hover {
+ /* background-color: #005f5f;    */
+}
+
+.anav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-----MODAL MENU STUFFS--------*/
+.modal-menu {
+margin-top: 100px;
+display: block;
+ margin-left: auto;
+    margin-right: auto;
+    
+
+
+}
+
+.modal-menu a {
+font-family: 'Anton', sans-serif;
+color: #444D59;
+font-size: 25px;
+display: inline-block;
+padding: 25px;
+margin-left: 25px;
+vertical-align:top;
+width: 150px;
+height: 150px;
+background-color: #fff;
+margin-bottom: 25px;
+margin-top: 0px;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  #pw-reset {
+  width:250px;
+  margin-left: 30%;
+  margin-top: 125px;
+  
+  }
+  
+  
+  
+  
+  .content-teaser {
+  
+  border-radius: 3px;
+  margin-bottom: 5px;
+  height: 40px;
+  min-width: 700px;
+  background-color: rgb(238,239,242);
+  }
+  #edit-delete-icon {
+  float: right;
+  padding-right: 10px;
+  padding-top: 4px;
+  
+  }
+  
+  
+  
+  
+  #edit-delete-icon img {
+  padding-left: 5px;
+  }
+  
+  
+  
+  
+  .content-teaser:hover {background-color: #fff;}
+  
+  
+  #teaser-title {
+  width: 25%;
+  float: left;
+  padding-left: 10px;
+  
+    font-size: 15px;
+    padding-top: 10px;
+    font-family: 'Anton', sans-serif;
+  
+  
+  }
+  #teaser-url {
+  
+  display: block;
+  max-width: 40%;
+  
+    font-size: 15px;
+    padding-top: 10px;
+    float: left;
+    
+    
+  
+  
+  }
+  
+#vertical-center {
+border: 1px solid;
+    border-color: red;
+    width: 70%;
+    height: 40px;
+    padding-top: 5px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ul.tabs.primary.clearfix {
+  display: none;
+  }
+  
+  
+  
+
+  #edit-delete.form-submit {
+  width: 300;
+  display: inline;
+  margin-left: 20px;
+  }
+  
+  a#edit-cancel {
+  display: none;
+  }
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  @media screen and (min-width: 600px) {
+  .anav li {
+    min-width: 100px;
+    border-bottom: none;
+    height: 35px;
+   line-height: 30px;  
+    /*font-size: 2em;*/
+  }
+  
+  
+  
+  
+  .amain a{
+/*background-color: blue; */
+color: #fff;
+line-height: 28px;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Option 1 - Display Inline */
+  
+  .anav li {
+    display: inline-block;
+    /*margin-right: -4px;  */
+  }
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+
+/*# sourceMappingURL=bootstrap.css.map */

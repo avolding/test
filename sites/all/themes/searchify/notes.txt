@@ -1,0 +1,245 @@
+Notes for searchier:
+lightbox edit thingy:
+http://jsfiddle.net/HnXFj/388/
+
+
+
+Menu Items
+	Logged Out:
+		feedback
+		faq
+		about
+		share
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Need to replace the hard-coded URL in the following files:
+node--search.tpl.php
+html.tpl.php
+
+Online image editor thing:
+http://apps.pixlr.com/editor/
+http://www.sitepoint.com/5-free-web-based-photoshop-alternatives/
+
+This is probably what I need for teh menu:
+http://jsfiddle.net/ELyQW/2/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cool Animated Drop Down List Stuff:\
+http://www.newmediacampaigns.com/blog/nicer-navigation-with-css-transitions-part-2
+http://codepen.io/toddsynan/full/pJuyx
+
+
+
+
+COOL TILE NAV DESIGN:
+http://wearemanic.com/
+
+
+
+
+
+
+
+
+How to impersonate users:
+http://knackforge.com/blog/sivaji/how-login-any-user-drupal-site
+
+dropdown menu example beginning:
+http://jsfiddle.net/Vqmaw/6916/
+
+
+
+
+coolest gif ever
+http://lolafk.com/?id=1501
+
+
+
+
+Logged In:
+main tiles page
+add new search
+add new link
+edit
+my account
+logout
+feedback
+share
+how it works
+examples
+
+
+Logged Out:
+sign in
+register
+how it works
+feedback
+share
+examples
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+THIS ONE IS WORKING...........
+http://codepen.io/anon/pen/mJVrjN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://codepen.io/anon/pen/jPWqxx
+
+
+
+HTML
+<body class="news">
+  <header class="head">
+    
+    <div class="nav">
+     
+      <ul>
+        <li class="main">SEARCHIER.COM</li>
+        
+        <li class="right"><a href="#">About</a></li>
+        <li class="right"><a href="#">Newsletter</a></li>
+        <li class="right"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+</body>
+
+
+
+
+CSS
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+.head {background-color: red; height: 50px;}
+.right {float: right;}
+ .main {float: left; padding-left: 50px; }
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  .contact {float: right;}
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #005f5f;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}

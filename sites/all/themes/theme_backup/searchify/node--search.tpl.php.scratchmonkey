@@ -1,0 +1,48 @@
+
+
+
+
+    <a href="#" data-toggle="modal" data-target="#myModal<?php print $nid ?>">
+  <img src="<?php print $node->field_tile_image_url['und']['0']['value'];?>" alt="<?php print $title ?>" >
+</a>
+		
+		
+		
+		
+		
+		<!-- Modal -->
+    <div class="modal fade" id="myModal<?php print $nid ?>" >
+        <div class="modal-dialog">
+            
+                
+                <div class="modal-body">
+                    <form target="_blank" action="http://localhost/searchier/sites/all/themes/at_subtheme/redirect.php" method="post" name="myform" onsubmit="setTimeout(function(){location.reload(true);},25)">
+					<input type="text" class="textbox" name="name" id="textareaID<?php print $nid ?>" placeholder="-O" >
+					<input type="hidden" name="prepend" value="<?php print $node->field_url_search_prefix['und']['0']['value'];?>">
+					
+					</form>
+					<br><img src="<?php print $node->field_lightbox_image_url['und']['0']['value'];?>" alt="<?php print $title ?>" >
+                </div>
+                
+            
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+        <script type='text/javascript'>
+            $(window).load(function() {
+                $('#myModal<?php print $nid ?>').on('shown.bs.modal', function() {
+                    $('#textareaID<?php print $nid ?>').focus();
+                })
+
+            });
+        </script>
+    </div>
+    <!-- /.modal -->
+	
+	
+	
+	
+	<!------------------
+		
+<?php print_r($node) ?>
+--------------------------------->
